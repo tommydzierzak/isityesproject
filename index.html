@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-h1   {font-size:1000%;
-	text-align:center;
-}
-</style>
+	<style>
+		h1 {
+			font-size: 1000%;
+			text-align: center;
+		}
+	</style>
 
 </head>
+
 <body class='  wsite-theme-light'>
 
-<h1 id="demo"></h1>
+	<h1 id="demo"></h1>
 
 
-<script>
-var today, startyes, endyes, text;
+	<script>
+		var today, startyes, endyes, text;
 
-today = new Date();
-startyes = new Date();
-startyes.setFullYear(2018, 3, 1);
-endyes = new Date();
-endyes.setFullYear(2018, 3, 22);
-
-
-if (endyes > today && today>startyes) {
-    text = "YES";
-} else {
-    text = "NO";
-}
-document.getElementById("demo").innerHTML = text;
-</script>
+		today = new Date();
+		startyes = new Date();
+		startyes.setFullYear(2018, 3, 1);
+		endyes = new Date();
+		endyes.setFullYear(2018, 3, 22);
 
 
-<div style='display:none'>{title}</div>
-<div style='display:none'>{menu}</div>
-<div style='display:none'>{content}</div>
+		if (endyes > today && today > startyes) {
+			text = "YES";
+		} else {
+			text = "NO";
+		}
+		document.getElementById("demo").innerHTML = text;
+	</script>
+
+
+	<div style='display:none'>{title}</div>
+	<div style='display:none'>{menu}</div>
+	<div style='display:none'>{content}</div>
 </body>
+
 </html>
