@@ -20,13 +20,11 @@
 		var today, startyes, endyes, text;
 
 		today = new Date();
-		startyes = new Date();
-		startyes.setFullYear(2018, 3, 1);
-		endyes = new Date();
-		endyes.setFullYear(2018, 3, 22);
+		startyes = new Date('2018/07/18');
+		endyes = new Date('2018/07/21');
 
 
-		if (endyes > today && today > startyes) {
+		if (today > startyes) {
 			text = "YES";
 		} else {
 			text = "NO";
