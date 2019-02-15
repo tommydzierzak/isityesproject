@@ -34,8 +34,11 @@
 
 
 		if (today > startyes) {
-			text = "YES";
-		} else {
+			if (today < endyes) {
+				text = "YES";
+			}
+		}
+		else {
 			text = "NO";
 		}
 		document.getElementById("demo").innerHTML = text;
